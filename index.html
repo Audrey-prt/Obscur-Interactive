@@ -1,23 +1,40 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Obscur-Interactive</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=375, initial-scale=1.0" />
+  <title>Navbar Mobile</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="main-header">
-      <div class="logo-container">
-        <div class="logo-circle"></div>
-      </div>
-      </header>
 
-      <nav class="nav-links">
-        <h1 class="header-title">Obscur-Interactive</h1>
-        <ul>
-          <li><a href="#">Store</a></li>
-          <li><a href="#">À propos</a></li>
-          <li><a href="#">Conseils</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
+  <div class="navbar">
+    <div class="logo">
+  <img src="O.jpg" alt="logo">
+</div>
+    <div class="title">Mon Site</div>
+    <div class="hamburger" onclick="toggleMenu(this)">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+
+  <div class="menu" id="menu">
+    <div class="menu-content">
+      <a href="#">Accueil</a>
+      <a href="#">Profil</a>
+      <a href="#">Paramètres</a>
+      <a href="#">Contact</a>
+    </div>
+
+    <div class="theme-toggle" onclick="toggleTheme()" id="themeBtn">
+      🌙
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+
+</body>
+</html>

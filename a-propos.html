@@ -1,1 +1,40 @@
-<h1>ma page à propos</h1>
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=375, initial-scale=1.0" />
+  <title>Obscur-Interactive</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="navbar">
+    <div class="logo">
+  <img src="O.jpg" alt="logo">
+</div>
+    <div class="title">À propos</div>
+    <div class="hamburger" onclick="toggleMenu(this)">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+
+  <div class="menu" id="menu">
+    <div class="menu-content">
+        <a href="index.html">Home</a>
+      <a href="a-propos.html">À propos</a>
+      <a href="#">Contact</a>
+    </div>
+
+    <div class="theme-toggle" onclick="toggleTheme()" id="themeBtn">
+      🌙
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+
+</body>
+</html>

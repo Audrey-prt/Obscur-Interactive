@@ -1,29 +1,40 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Obscur-Interactive</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=375, initial-scale=1.0" />
+  <title>Obscur-Interactive</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
-    <header class="main-header">
-      <nav class="navbar">
-        <h1 class="logo">Obscur-Interactive</h1>
-        <ul class="nav-links">
-          <li><a href="#">Store</a></li>
-          <li><a href="a-propos.html">À propos</a></li>
-          <li><a href="#">Conseils</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </nav>    
-    </header>
-    <main>
 
-    </main>
-    <footer>
 
-    </footer>
+  <div class="navbar">
+    <div class="logo">
+  <img src="O.jpg" alt="logo">
+</div>
+    <div class="title">Obscur-Interactive</div>
+    <div class="hamburger" onclick="toggleMenu(this)">
+      <span></span>
+      <span></span>
+      <span></span>
     </div>
-    </html>
+  </div>
+
+  <div class="menu" id="menu">
+    <div class="menu-content">
+      <a href="index.html">Home</a>
+      <a href="a-propos.html">À propos</a>
+      <a href="#">Contact</a>
+    </div>
+
+    <div class="theme-toggle" onclick="toggleTheme()" id="themeBtn">
+      🌙
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+
+</body>
+</html>

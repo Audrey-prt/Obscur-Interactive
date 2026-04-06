@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=375, initial-scale=1.0" />
+  <title>Obscur-Interactive / Animal Jam</title>
+  <link rel="stylesheet" href="AJ.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <div class="navbar">
+    <div class="logo">
+      <img src="O.jpg" alt="logo">
+    </div>
+    <div class="title">Animal Jam</div>
+    <div class="hamburger" onclick="toggleMenu(this)">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+
+  <!-- Menu -->
+  <div class="menu" id="menu">
+    <div class="menu-content">
+      <a href="index.html">Home</a>
+      <a href="a-propos.html">À propos</a>
+      <a href="#">Contact</a>
+    </div>
+    <div class="theme-toggle" onclick="toggleTheme()" id="themeBtn">
+      🌙
+    </div>
+  </div>
+
+  <!-- Carrousel -->
+  <div class="carousel">
+    <div class="carousel-track" id="carouselTrack">
+      <img src="AJ1.jpeg" alt="Slide 1">
+      <img src="AJ2.webp" alt="Slide 2">
+       <img src="AJ3.jpg" alt="Slide 3">
+       <img src="AJ4.jpg" alt="Slide 4">
+       <img src="AJ5.webp" alt="Slide 5">
+       <img src="AJ6.jpg" alt="Slide 6">
+       <img src="AJ7.webp" alt="Slide 7">
+       <img src="AJ8.webp" alt="Slide 8">
+       <img src="AJ9.jpg" alt="Slide 9">
+    </div>
+    <button class="carousel-btn left" onclick="prevSlide()">&#10094;</button>
+    <button class="carousel-btn right" onclick="nextSlide()">&#10095;</button>
+   <div class="carousel-dots" id="carouselDots"></div>
+</div>
+
+  <!-- Bienvenue -->
+  <section class="welcome">
+    <h2>Bienvenue dans Animal Jam !</h2>
+    <p>Explore le monde sauvage de Jamaa et crée ton propre animal! Rencontre des amis, joue à des mini-jeux et décore ta tanière !</p>
+    <a href="https://classic.animaljam.com/fr/" target="_blank">
+    <button class="main-btn">Play Wild</button>
+    </a>
+  </section>
+
+<!-- Story -->
+<section class="story-section">
+    <h2>L'histoire de Jamaa</h2>
+  <h3><u>Jamaa</u></h3>
+  <div class="story-row">
+    <div class="story-text">
+      <p>Au commencement, les Esprits Gardiens Mira et Zios ont créé le monde de Jamaa, un lieu paisible où tous les animaux vivaient en harmonie avec la nature. Pendant longtemps, Jamaa était un endroit sûr, rempli de vie et d’équilibre.</p>
+    </div>
+    <div class="story-image">
+      <img src="Mira-Zios.jpeg" alt="">
+    </div>
+  </div>
+
+  <div class="story-row reverse">
+    <div class="story-text">
+      <p>Mais un jour, des créatures sombres appelées Phantoms sont apparues. Elles ont commencé à envahir Jamaa, corrompant les terres et mettant les animaux en danger. Face à cette menace, Mira et Zios ont choisi des animaux courageux venus de différents endroits : les Alphas.</p>
+    </div>
+    <div class="story-image">
+      <img src="Phantoms.png" alt="">
+    </div>
+  </div>
+
+  <div class="story-row">
+    <div class="story-text">
+      <p>Les Alphas sont devenus les protecteurs de Jamaa. Chacun possède des talents uniques pour combattre les Phantoms et aider les autres animaux. Grâce à leur courage et à leur unité, ils ont réussi à repousser les Phantoms à plusieurs reprises.</p>
+    </div>
+    <div class="story-image">
+      <img src="AlphaStory.jpg" alt="">
+    </div>
+  </div>
+
+    <div class="story-row reverse">
+    <div class="story-text">
+      <p>Cependant, la menace n’a jamais complètement disparu. Les Phantoms continuent de revenir, et Jamaa reste un monde qui a besoin de protection. Les Alphas, avec l’aide des joueurs, poursuivent leur mission pour maintenir la paix et protéger tous les animaux.</p>
+    </div>
+    <div class="story-image">
+      <img src="JunaPhantoms.jpg" alt="">
+    </div>
+  </div>
+
+     <div class="story-row">
+    <div class="story-text">
+      <p>Aujourd’hui, Jamaa est toujours un monde vivant, où l’aventure continue. Les animaux y explorent, créent, et se battent encore contre les Phantoms pour préserver l’équilibre du monde.</p>
+    </div>
+    <div class="story-image">
+      <img src="Jamaa.jpg" alt="">
+    </div>
+  </div>
+
+</section>
+
+<!-- Alphas -->
+<section class="alpha-section">
+   <h3><u>Les Alphas</u></h3>
+  <p>Les Alphas sont des animaux choisis par les Esprits Gardiens Zios et Mira pour protéger Jamaa et ses habitants contre les Fantômes.</p>
+  
+  <div class="alpha-cards">
+
+    <div class="alpha-card">
+      <img src="Phantom.webp" alt="Phantom">
+      <h3><u>Phantoms</u></h3>
+      <p>Les Phantoms sont des créatures sombres et mystérieuses qui menacent Jamaa. Ils cherchent à envahir les terres et à semer le chaos parmi les animaux.</p>
+      <a href="https://animaljam.fandom.com/wiki/Phantoms" class="alpha-btn">En savoir plus</a>
+    </div>
+
+    <div class="alpha-card">
+      <img src="Mira.webp" alt="Alpha 1">
+      <h3><u>Mira</u></h3>
+      <p>Mira est la Mère et l'Esprit Gardien de Jamaa, souvent vue comme une grande héron protectrice qui veille sur tout le monde. Elle n’apparaît pas directement dans le jeu, mais elle est représentée par des statues.</p>
+      <a href="https://animaljam.fandom.com/wiki/Mira" class="alpha-btn">En savoir plus</a>
+    </div>
+
+     <div class="alpha-card">
+      <img src="Zios.webp" alt="Alpha 2">
+      <h3><u>Zios</u></h3>
+      <p>Zios est l’Esprit Gardien de Jamaa, surnommé le Père du Ciel. Avec Mira, il a créé Jamaa et les Alphas. Il n’apparaît jamais directement dans le jeu, mais est représenté par un grand masque doré.</p>
+      <a href="https://animaljam.fandom.com/wiki/Zios" class="alpha-btn">En savoir plus</a>
+    </div>
+
+    <div class="alpha-card">
+      <img src="Gilbert.webp" alt="Alpha 3">
+      <h3><u>Sir Gilbert</u></h3>
+      <p>Sir Gilbert est un tigre noble et courageux choisi pour protéger Jamaa contre les Phantoms. Il est un guerrier sérieux, fort et stratégique, respecté par les autres animaux pour sa sagesse et sa discipline.  </p>
+      <a href="https://animaljam.fandom.com/wiki/Sir_Gilbert" class="alpha-btn">En savoir plus</a>
+    </div>
+
+    <div class="alpha-card">
+      <img src="liza.webp" alt="Alpha 4">
+      <h3><u>Liza</u></h3>
+      <p>Liza est une Alpha douce mais déterminée, protectrice de Jamaa. Elle est sage et attentionnée, guidant les animaux avec calme et courage.</p>
+      <a href="https://animaljam.fandom.com/wiki/Liza" class="alpha-btn">En savoir plus</a>
+    </div>
+
+    <div class="alpha-card">
+      <img src="Cosmo.webp" alt="Alpha 5">
+      <h3><u>Cosmo</u></h3>
+      <p>Cosmo est calme, timide et très intelligent. Il aime étudier la nature, surtout les plantes, et a une grande connaissance des herbes et de la botanique. </p>
+      <a href="https://animaljam.fandom.com/wiki/Cosmo" class="alpha-btn">En savoir plus</a>
+    </div>
+
+    <div class="alpha-card">
+      <img src="Graham.webp" alt="Alpha 6">
+      <h3><u>Graham</u></h3>
+      <p>Graham est un singe intelligent et excentrique, toujours occupé à inventer et bricoler des machines pour aider les autres. Curieux et joyeux, il aime améliorer constamment ses inventions.</p>
+      <a href="https://animaljam.fandom.com/wiki/Graham" class="alpha-btn">En savoir plus</a>
+    </div>
+
+      <div class="alpha-card">
+      <img src="Peck.webp" alt="Alpha 7">
+      <h3><u>Peck</u></h3>
+      <p>Peck est très créative et pleine d’énergie. Elle adore l’art, la musique et inspirer les autres animaux à créer des choses magnifiques. Elle accueille aussi les nouveaux joueurs dans Jamaa.  </p>
+      <a href="https://animaljam.fandom.com/wiki/Peck" class="alpha-btn">En savoir plus</a>
+    </div>
+
+      <div class="alpha-card">
+      <img src="Tavie.webp" alt="Alpha 8">
+      <h3><u>Tavie</u></h3>
+      <p>Tavie est l’Alpha des dauphins, courageuse et optimiste, qui protège les océans de Jamaa contre les Fantômes. Elle aime la musique et dirige un groupe sous‑marin appelé The Jolly Oyster.  </p>
+      <a href="https://animaljam.fandom.com/wiki/Tavie" class="alpha-btn">En savoir plus</a>
+    </div>
+
+     <div class="alpha-card">
+      <img src="Greely_run.webp" alt="Alpha 9">
+      <h3><u>Greely</u></h3>
+      <p>Greely est le courageux Alpha des Loups, choisi pour protéger Jamaa. Il est sage et loyal, guidant les autres Alphas et animaux grâce à son instinct de meneur.</p>
+      <a href="https://animaljam.fandom.com/wiki/Greely" class="alpha-btn">En savoir plus</a>
+    </div>
+
+    <div class="alpha-card">
+      <img src="Juno.webp" alt="Alpha 10">
+      <h3><u>Juno</u></h3>
+      <p>Juno est un ancien loup arctique légendaire qui a protégé Jamaa des Phantoms. Pour protéger le monde, Juno s’est transformé en statue. Courageux et déterminé, Juno incarne la protection et le sacrifice pour Jamaa.</p>
+      <a href="https://ajplaywild.fandom.com/wiki/Juno" class="alpha-btn">En savoir plus</a>
+    </div>
+
+  </div>
+</section>
+
+  <!-- Activités -->
+  <section class="activities">
+    <h2><u>Gameplay</u></h2>
+    <div class="activity-cards">
+      <div class="card">
+        <h3><u>Explore le monde de Jamaa !</u></h3>
+             <img src="Maps.png" alt="">
+        <p>Viens explorer le vaste monde de Jamaa, composé de différentes régions comme la Forêt, le Désert, le Glacier et l’Océan. Chaque région possède ses animaux, plantes et mini-jeux uniques. Tu peux interagir avec le décor, collecter des objets et découvrir des secrets cachés.</p>
+    </div>
+         <div class="card">
+            <h3><u>Choisis et personnalise ton animal !</u></h3>
+            <img src="choose.png" alt="">
+        <p>Choisis ton animal préféré et personnalise le avec des couleurs, des motifs, des accessoires et des tas de vêtements différents.</p>
+    </div>
+      <div class="card">
+        <h3><u>Deviens riche et collectionne des objets !</u></h3>
+        <img src="riche.png" alt="">
+        <p>Collecte des objets, des animaux rares et des accessoires spéciaux, souvent disponibles uniquement pendant certains événements. Tu peux également faire des échanges avec d'autres joueurs pour obtenir des objets exclusifs.</p>
+    </div>
+      <div class="card">
+         <h3><u>Mini-jeux et activités !</u></h3>
+        <img src="AVENTURE.png" alt="">
+        <p>Jamaa regorge de mini-jeux qui permettent de gagner des Gems (pierres précieuses), monnaie du jeu. Ces jeux incluent des courses, des puzzles, des sauts, et même des combats avec les Phantoms pour protéger le monde. Les mini-jeux sont variés et permettent à la fois de s’amuser et de progresser dans le jeu.</p>
+    </div>
+    <div class="card">
+         <h3><u>Fais-toi de nouveaux amis !</u></h3>
+        <img src="Amis.png" alt="">
+        <p>Tu peux discuter, te faire des amis, échanger des objets, et participer à des événements. Les événements communautaires et les fêtes en ligne permettent de rencontrer d’autres joueurs, participer à des activités en groupe, et partager des créations.</p>
+    </div>
+    </div>
+
+  </section>
+
+ <!-- Événements & Communauté -->
+
+    <div class="community">
+      <h2>Rejoins la Communauté!</h2>
+      <p>Viens découvrir le monde de Jamaa aux cotés des Jambassadors et des milliers d'autres joueurs qui t'attendent! Connecte-toi et part à l'aventure sur Animal Jam Classic !</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="influencers">
+    <h2>Jambassadors</h2>
+    <p>Les Jambassadors sont des joueurs choisis pour représenter la communauté. Ils partagent des astuces, créent du contenu et aident les autres joueurs à mieux profiter du jeu. Grâce à eux, la communauté reste active, accueillante et pleine d’idées !</p>
+    <div class="influencer-cards">
+        <a href="https://www.youtube.com/@PlayAnimalJam/featured" target="_blank"><div class="card">
+        <img src="AJHQ.webp" alt="AJHQ"><p>AJHQ</p></div></a>
+      <a href="https://www.youtube.com/channel/UCG9ox2cpkyzveP85HoJndXg" target="_blank"><div class="card">
+        <img src="Aparri.webp" alt="Aparri"><p>Aparri</p></div></a>
+      <a href="https://www.youtube.com/@WisteriaMoonAJ" target="_blank"><div class="card">
+        <img src="Wisteriamoon.webp" alt="Wisteriamoon"><p>Wisteriamoon</p></div></a>
+      <a href="https://www.youtube.com/@AnimalJamVideos1234" target="_blank"><div class="card">
+        <img src="Bepper.webp" alt="Bepper"><p>Bepper</p></div></a>
+        <a href="https://www.youtube.com/@Shopking" target="_blank"><div class="card">
+        <img src="TheShopking.jpg" alt="TheShopking"><p>TheShopking</p></div></a>
+        <a href="https://www.youtube.com/@PinkRhino24" target="_blank"><div class="card">
+        <img src="PinkRhino24.jpg" alt="PinkRhino24"><p>PinkRhino24</p></div></a>
+    </div>
+      </section>
+
+<script src="AJ.js" defer></script>
+
+</body>
+</html>
